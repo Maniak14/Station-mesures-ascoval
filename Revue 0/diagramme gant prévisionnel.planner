@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20250114T000000Z" mrproject-version="2" calendar="2">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Travaill&#xE9;" description="Un jour de travail normal"/>
+      <day-type id="1" name="Ch&#xF4;m&#xE9;" description="Un jour ch&#xF4;m&#xE9; normal"/>
+      <day-type id="2" name="Utiliser la base" description="Utilise un jour du calendrier de base"/>
+      <day-type id="3" name="Jeudi" description=""/>
+      <day-type id="4" name="Mardi" description=""/>
+      <day-type id="5" name="Mercredi" description=""/>
+      <day-type id="6" name="Vendredi" description=""/>
+      <day-type id="7" name="Lundi" description=""/>
+    </day-types>
+    <calendar id="1" name="D&#xE9;faut">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+    <calendar id="2" name="asc">
+      <default-week mon="1" tue="4" wed="5" thu="3" fri="6" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="3">
+          <interval start="0810" end="1000"/>
+          <interval start="1205" end="1450"/>
+        </overridden-day-type>
+        <overridden-day-type id="5">
+          <interval start="1300" end="1655"/>
+        </overridden-day-type>
+        <overridden-day-type id="4">
+          <interval start="0800" end="1200"/>
+        </overridden-day-type>
+        <overridden-day-type id="6">
+          <interval start="1355" end="1750"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+    <calendar id="3" name="D&#xE9;faut">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+      <calendar id="4" name="ascoval">
+        <default-week mon="2" tue="2" wed="2" thu="2" fri="2" sat="2" sun="2"/>
+        <overridden-day-types/>
+        <days/>
+      </calendar>
+    </calendar>
+    <calendar id="5" name="D&#xE9;faut">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Apprentissage github" note="" work="14400" duration="14400" start="20250114T000000Z" end="20250114T120000Z" work-start="20250114T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20250114T000000Z"/>
+    </task>
+    <task id="2" name="D&#xE9;couvette des projets" note="" work="3600" duration="3600" start="20250114T120000Z" end="20250115T140000Z" work-start="20250115T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="3" name="Cr&#xE9;ation du cahier des charges" note="" work="10500" duration="10500" start="20250115T140000Z" end="20250115T165500Z" work-start="20250115T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="4" name="Analyse des besoins initiaux" note="" work="6600" duration="6600" start="20250115T165500Z" end="20250116T100000Z" work-start="20250116T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="3" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="5" name="Etude technique des composants" note="" work="9000" duration="9000" start="20250116T120000Z" end="20250116T143500Z" work-start="20250116T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="4" type="FS" lag="7200"/>
+      </predecessors>
+    </task>
+    <task id="6" name="R&#xE9;alisation du cas d'utilisation" note="" work="14100" duration="14100" start="20250117T000000Z" end="20250117T175000Z" work-start="20250117T135500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20250117T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="5" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="7" name="R&#xE9;alisation du cas d'utilisation" note="" work="14400" duration="14400" start="20250117T175000Z" end="20250121T120000Z" work-start="20250121T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="6" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="8" name="R&#xE9;alisation des exigences" note="" work="14100" duration="14100" start="20250121T120000Z" end="20250122T165500Z" work-start="20250122T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="7" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="9" name="R&#xE9;alisation des exigences" note="" work="6600" duration="6600" start="20250122T165500Z" end="20250123T100000Z" work-start="20250123T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="8" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="10" name="R&#xE9;alisation du gantt" note="" work="9900" duration="9900" start="20250123T120500Z" end="20250123T145000Z" work-start="20250123T120500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="9" type="FS" lag="7500"/>
+      </predecessors>
+    </task>
+    <task id="11" name="R&#xE9;alisation du gantt" note="" work="14100" duration="14100" start="20250123T145000Z" end="20250124T175000Z" work-start="20250124T135500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="10" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="12" name="Analyse des besoins initiaux" note="" work="14400" duration="14400" start="20250124T175000Z" end="20250128T120000Z" work-start="20250128T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="11" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="13" name="Analyse des besoins initiaux" note="" work="14100" duration="14100" start="20250128T120000Z" end="20250129T165500Z" work-start="20250129T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="12" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="14" name="Analyse des besoins initiaux" note="" work="6600" duration="6600" start="20250129T165500Z" end="20250130T100000Z" work-start="20250130T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="13" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="15" name="Finalisation des Analyse des besoins initiaux" note="" work="9900" duration="9900" start="20250130T120500Z" end="20250130T145000Z" work-start="20250130T120500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="14" type="FS" lag="7500"/>
+      </predecessors>
+    </task>
+    <task id="16" name="Etude technique des composants" note="" work="14100" duration="14100" start="20250130T145000Z" end="20250131T175000Z" work-start="20250131T135500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="17" name="Etude technique des composants" note="" work="14400" duration="14400" start="20250131T175000Z" end="20250204T120000Z" work-start="20250204T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="16" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="18" name="Etude technique des composants" note="" work="14100" duration="14100" start="20250204T120000Z" end="20250205T165500Z" work-start="20250205T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="17" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="19" name="Installation et configuration des capteurs de temp&#xE9;rature et d'humidit&#xE9;" note="" work="6600" duration="6600" start="20250205T165500Z" end="20250206T100000Z" work-start="20250206T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="18" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="20" name="Installation et configuration des capteurs de temp&#xE9;rature et d'humidit&#xE9;" note="" work="9900" duration="9900" start="20250206T120500Z" end="20250206T145000Z" work-start="20250206T120500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="19" type="FS" lag="7500"/>
+      </predecessors>
+    </task>
+    <task id="21" name="Installation et configuration des capteurs de temp&#xE9;rature et d'humidit&#xE9;" note="" work="14100" duration="14100" start="20250206T145000Z" end="20250207T175000Z" work-start="20250207T135500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="20" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="22" name="Mise en place de l'API REST" note="" work="14400" duration="14400" start="20250207T175000Z" end="20250211T120000Z" work-start="20250211T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="21" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="23" name="Mise en place de l'API REST" note="" work="14100" duration="14100" start="20250211T120000Z" end="20250212T165500Z" work-start="20250212T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="22" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="24" name="Mise en place de l'API REST" note="" work="6600" duration="6600" start="20250212T165500Z" end="20250213T100000Z" work-start="20250213T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="23" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="25" name="D&#xE9;veloppement de l'interface web" note="" work="9900" duration="9900" start="20250213T120500Z" end="20250213T145000Z" work-start="20250213T120500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="24" type="FS" lag="7500"/>
+      </predecessors>
+    </task>
+    <task id="26" name="D&#xE9;veloppement de l'interface web" note="" work="14100" duration="14100" start="20250213T145000Z" end="20250214T175000Z" work-start="20250214T135500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="25" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="27" name="D&#xE9;veloppement de l'interface web" note="" work="14400" duration="14400" start="20250214T175000Z" end="20250218T120000Z" work-start="20250218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="26" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="28" name="Test des capteurs" note="" work="14100" duration="14100" start="20250218T120000Z" end="20250219T165500Z" work-start="20250219T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="27" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="29" name="Test des capteurs" note="" work="6600" duration="6600" start="20250219T165500Z" end="20250220T100000Z" work-start="20250220T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="28" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
